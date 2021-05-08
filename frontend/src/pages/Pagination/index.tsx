@@ -7,6 +7,7 @@ type Props = {
 
 const Pagination = ( { page, onPageChange } : Props ) => {
   return (
+    // Não está centralizando o conteúdo
     <div className="row d-flex justify-content-center">
       <nav>
         <ul className="pagination">
