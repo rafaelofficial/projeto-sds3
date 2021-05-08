@@ -6,11 +6,10 @@ type Props = {
 }
 
 const Pagination = ( { page, onPageChange } : Props ) => {
-  return (
-    // Não está centralizando o conteúdo
-    <div className="row d-flex justify-content-center">
+  return (   
+    <div className="row d-flex">
       <nav>
-        <ul className="pagination">
+        <ul className="pagination justify-content-center">
           <li className={`page-item ${page.first ? 'disabled' : ''} `}>
             <button className="page-link" onClick={ () => onPageChange(page.number - 1) } >Anterior</button>
           </li>
